@@ -24,12 +24,6 @@ This project provides an AI-powered intelligent mental health assessment tool th
 
 ✅ Real-time speech-to-text analysis
 ✅ Depression level classification:
-
-0 → Mild/Moderate Depression
-
-1 → Severe Depression / Suicidal Ideation
-
-2 → Mixed / Supportive Emotional State
 ✅ User-friendly Flask web interface
 ✅ Scalable & ready for future deployment
 ✅ End-to-end pipeline (Audio → Text → ML Prediction)
@@ -76,21 +70,6 @@ Speech Recognition: Google SpeechRecognition (Python API)
 Frontend: HTML + CSS (Flask Templates)
 
 Serialization: Pickle (for model/vectorizer storage)
-
-🔧 Installation & Usage
-1️⃣ Clone the repo
-git clone https://github.com/yourusername/depression-detection-speech.git
-cd depression-detection-speech
-
-2️⃣ Install dependencies
-pip install -r requirements.txt
-
-3️⃣ Run the Flask app
-python appp.py
-
-4️⃣ Open in browser
-
-Navigate to: 👉 http://127.0.0.1:5000/
 
 Upload an audio file and get instant depression analysis.
 
