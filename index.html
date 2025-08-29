@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Audio Depression Classifier</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url("{{ url_for('static', filename='bg.jpg') }}") no-repeat center center fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center">
+
+  <div class="bg-white bg-opacity-90 shadow-lg rounded-2xl p-8 w-96 text-center">
+    <h1 class="text-2xl font-bold text-gray-700 mb-4">🎤 Audio Depression Classifier</h1>
+
+    <form action="/predict" method="POST" enctype="multipart/form-data" class="space-y-4">
+      <input type="file" name="file" accept=".wav" required class="border rounded p-2 w-full">
+      <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg w-full">
+        Upload & Predict
+      </button>
+    </form>
+
+    {% if transcript %}
+      <div class="mt-6 text-left">
+        <p class="font-semibold text-gray-600">📝 Transcript:</p>
+        <p class="bg-gray-100 p-2 rounded">{{ transcript }}</p>
+      </div>
+    {% endif %}
+
+    {% if prediction %}
+      <div class="mt-4 text-left">
+        <p class="font-semibold text-gray-600">🔮 Prediction:</p>
+        <p class="bg-green-100 p-2 rounded">{{ prediction }}</p>
+      </div>
+    {% endif %}
+  </div>
+
+</body>
+</html>
