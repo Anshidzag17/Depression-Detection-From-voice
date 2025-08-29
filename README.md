@@ -1,13 +1,13 @@
-🎙️ Intelligent Mental Health Assessment
+# Intelligent Mental Health Assessment
 
-🧠 Predicting Depression Levels from Speech (Real-Time Web App)
-
-
+# 🧠 Predicting Depression Levels from Speech (Real-Time Web App)
 
 
 
 
-📌 Overview
+
+
+# 📌 Overview
 
 Depression is one of the leading mental health challenges worldwide, but many people avoid diagnosis due to stigma, lack of resources, or late detection.
 This project provides an AI-powered intelligent mental health assessment tool that predicts depression severity from speech in real time.
@@ -20,28 +20,38 @@ This project provides an AI-powered intelligent mental health assessment tool th
 
 🌐 Accessible via a Flask-based web application.
 
-🚀 Features
+# 🚀 Features
 
 ✅ Real-time speech-to-text analysis
+
 ✅ Depression level classification:
+
 ✅ User-friendly Flask web interface
+
 ✅ Scalable & ready for future deployment
+
 ✅ End-to-end pipeline (Audio → Text → ML Prediction)
 
-🏗️ Project Architecture
+# 🏗️ Project Architecture
+
 🎤 Audio Input (WAV/MP3)
         ⬇
+        
 📝 Speech-to-Text (SpeechRecognition API)
         ⬇
+        
 🔠 Text Preprocessing (TF-IDF Vectorizer)
         ⬇
+        
 🤖 ML Model (Multinomial Naive Bayes)
         ⬇
+        
 📊 Depression Level Prediction
         ⬇
+        
 🌐 Flask Web App (User Interface)
 
-📂 Dataset
+# 📂 Dataset
 
 We trained our model using CSV speech text datasets with 3 labels:
 
@@ -73,7 +83,7 @@ Serialization: Pickle (for model/vectorizer storage)
 
 Upload an audio file and get instant depression analysis.
 
-📊 Results
+# 📊 Results
 
 LSTM Model: ~64% accuracy
 
@@ -91,7 +101,7 @@ Naive Bayes Model: ~68% accuracy (selected for final app)
 
 📱 Extend to mobile app integration
 
-💡 Why This Project Matters?
+# 💡 Why This Project Matters?
 
 Helps in early screening of depression
 
@@ -101,7 +111,7 @@ Supports mental health professionals in early intervention
 
 Real-time, accessible, and scalable solution for the future
 
-🙌 Acknowledgements
+# 🙌 Acknowledgements
 
 Dataset contributors
 
@@ -109,7 +119,7 @@ Python libraries: Flask, scikit-learn, SpeechRecognition
 
 Inspiration: Tackling mental health with AI
 
-🧑‍💻 Author
+# 🧑‍💻 Author
 
 👤 Muhammed Anshid
 🔗 AI Engineer | ML Enthusiast | Passionate about AI for Social Good
